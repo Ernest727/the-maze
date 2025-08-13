@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "src": "/assets/images/restaurant/lamb-chops.png",
+      "caption": "Grilled Lamb Chops with Fries"
+    },
+    {
+      "src": "/assets/images/restaurant/outdoor-seating.jpg",
+      "caption": "Outdoor Dining Area"
+    },
+    {
+      "src": "/assets/images/restaurant/bar-area.jpg",
+      "caption": "The Maze Bar & Lounge"
+    },
+    {
+      "src": "/assets/images/restaurant/pineapple-drink.png",
+      "caption": "Pineapple Cocktail"
+    },
+    {
+      "src": "/assets/images/restaurant/breakfast-plate.png",
+      "caption": "Full Breakfast Plate"
+    }
+  ]
+}

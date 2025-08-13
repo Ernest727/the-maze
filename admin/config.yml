@@ -1,0 +1,45 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images/restaurant"
+public_folder: "/assets/images/restaurant"
+
+site_url: "/"
+locale: "en"
+
+collections:
+  - name: "data"
+    label: "Site Data"
+    files:
+      - file: "data/site.json"
+        label: "Hero & Site Settings"
+        name: "site"
+        fields:
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Hero Alt Text", name: "heroAlt", widget: "string" }
+      - file: "data/events.json"
+        label: "Upcoming Events"
+        name: "events"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { label: "Date / Recurrence", name: "date", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image URL (optional)", name: "image", widget: "image", required: false }
+              - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - file: "data/gallery.json"
+        label: "Gallery"
+        name: "gallery"
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
